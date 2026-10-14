@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Tag de objeto</title>
+</head>
+<body>
+    
+<h1><font color="red" size="14" face="arial">Contato</font></h1><br>
+<i>Seja bem vindo preencha o <b>formulário</b> abaixo para: </i><br><br>
+
+<ul>
+    <li>Duvidas</li>
+    <li>Sugestões</li>
+    <li>Críticas</li>
+    <li>Orçamentos</li>
+</ul> 
+
+<p>Caso queira ver nossos produtos, clique <a href="#">aqui</a></p>
+
+<form>
+nome:  <input type="text" id="nome" placeholder="digite seu nome"
+        maxlength="100" required><br> 
+ email:  <input type="email" id="email" placeholder="digite seu email"
+        required > <br>
+         telefone:  <input type="tel" name="telefone" pattern="[0-9]{5}-[0-9]{4}" placeholder="digite seu telefone" required><br>
+<br>
+
+assunto: <select name="assunto">
+    <option value="duvidas">Duvidas</option>
+    <option value="sugestoes">Sugestões</option>
+    <option value="criticas">Críticas</option>
+    <option value="orcamentos">Orçamentos</option>
+</select>
+
+<p>Deseja receber uma cópia desse e-mail: <input type="radio" name="confirmacao" value="sim"> Sim <input type="radio" name="confirmacao" value="não"> Não </p>
+<br> 
+
+mensagem:<br>
+<textarea name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem aqui..."></textarea>
+<br>
+
+<input type="submit" value="Enviar">
+
+</form>
+</body>
+</html> 
+

@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <h2>Cesta de Compras</h2>
+  
+  <table class="table table-striped mt-3">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Valor Unitário</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aqui entra o *ngFor para percorrer os itens da cesta -->
+      <tr *ngFor="let item of cesta.itens">
+        <td>{{ item.produto.nome }}</td>
+        <td>{{ item.quantidade }}</td>
+        <td>R$ {{ item.produto.valor | number:'1.2-2' }}</td>
+        <td>R$ {{ item.valorItem | number:'1.2-2' }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alert alert-info text-end">
+    <h4>Valor Total da Cesta: R$ {{ cesta.valorTotal | number:'1.2-2' }}</h4>
+  </div>
+</div>
